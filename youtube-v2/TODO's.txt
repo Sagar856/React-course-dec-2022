@@ -1,0 +1,38 @@
+Java Script todo's :-
+
+1.  object creatrion
+
+         // Task 01
+
+            const company = {
+                empId: 123,
+                empName: 'XYZ'};
+
+            console.log(company);
+
+            company.empName = 'ABC';
+            company.empId = 98;
+
+            console.log(company);
+              
+
+2.  Switch case TODO :-
+
+        // Task : 02
+
+            var output = calc('Div', 3, 2);
+            function calc (operation, num1, num2) {
+              switch(operation) {
+                case 'Add':
+                  return num1 + num2;
+                case 'Div':
+                  return num1 / num2;
+                case 'Mul':
+                  return num1 * num2;
+                case 'Sub':
+                  return num1 - num2;
+                default:
+                  return 'Invalid operation';
+              }
+            }
+            console.log(output);

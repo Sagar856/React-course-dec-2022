@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- External JavaScripts -->
+    <script src="./assets/scripts/main.js"></script>
+    <script>
+      // Event Handler function
+      function handleClickMe(event) {
+        console.log(
+          event
+        ); /* event object- where the event occured, what type of event, the target element*/
+        event.target.innerText = "Clicked";
+        event.target.disabled = "true";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Js demo!</h1>
+
+    <button onclick="handleClickMe(event)">Click Me</button>
+    <button
+      onmouseover="handleMouseover(event)"
+      onmouseleave="handleMouseleave(event)"
+    >
+      Mouseover here
+    </button>
+    <br />
+    <textarea id="welcomeDom">Welcome to DOM manipulation</textarea>
+    <br />
+    <button onclick="handleChangeBgColor()">Change Bg Color</button>
+    <button
+      onclick="handleChangeTextColor()"
+      ondblclick="handleChangecolorToBlack()"
+    >
+      Change Text Color
+    </button>
+    <button onclick="handleMakeTextBolder()">Make Text Bolder</button>
+
+    <hr />
+    <button onclick="handleDisplayTime()">What's the Time now?</button>
+    <div>
+      <p>Time is:</p>
+      <p id="timeWrapper"></p>
+    </div>
+    <hr />
+    <button onclick="handleDisplayDate()">What's the Date Today?</button>
+    <div>
+      <p>Date is:</p>
+      <p id="DateWrapper"></p>
+    </div>
+    <hr />
+    <button onclick="handleRandomNumber()">Generate a Random Number</button>
+    <div>
+      <p>Random Number Generated is</p>
+      <p id="randomNumber"></p>
+    </div>
+
+    <hr />
+    <input
+      type="text"
+      placeholder="Enter Skill"
+      id="inputSkills"
+      value="Search"
+      onfocus="clearThis(this)"
+    />
+    <button id="addSkillbtn" onclick="handleAddSkills(event)">
+      Add New Skill
+    </button>
+    <ul id="skills">
+      <li>HTML</li>
+      <!-- TODO: Learn about creating li and appending it within ul element using js -->
+    </ul>
+  </body>
+</html>

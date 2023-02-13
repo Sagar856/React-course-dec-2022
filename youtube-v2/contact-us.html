@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" 
+  content="Welcome to Youtube V1 Contact us page, ">
+  <meta name="keywords" 
+  content="movie video, funny videos, course content, Contact to youtube, mail youtube, youtube support">
+  
+  <title>Contact Us</title>
+  <!-- Normalising CSS linking styles -->
+  <link rel="stylesheet" href="./assets/styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link External stylesheet file to html file -->
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="stylesheet" href="./assets/styles/contact-us.css">
+
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <div class="header-wrapper">
+      <aside class="collapsible-menu">
+        <button type="button" aria-label="collapsible Menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="primaryNav">
+          <!-- <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/">Shorts</a></li>
+                <li><a href="/">Subscriptions</a></li>
+                <li><a href="/">Library</a></li>
+                <li><a href="/">History</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact-us.html">Contact</a></li>
+              </ul> -->
+        </nav>
+      </aside>
+      <div class="main-header">
+        <a href="./index.html" class="logo-link">
+          <img src="./assets/images/youtube-logo01.png" alt="YouTube Logo" height="30px" width="85px"></a>
+        <div class="controls-bar">
+          <input type="search" class="search-input" placeholder="Search" aria-label="Enter search query">
+          <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button aria-label="Mic"><i class="fa-solid fa-microphone"></i></button>
+          <button aria-label="More options"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+          <a href="/"><button class="signin-btn"><i class="fa-solid fa-circle-user"></i>Sign in</button></a>
+        </div>
+      </div>
+    </div>
+  </header> 
+
+  <!-- Main section -->
+  <main>
+    <h1 class="heading">Contact us here!</h1>
+    <div>
+      <div class="location">
+        <section class="map-location">
+          <!-- google maps embedded iFrame link  -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15127.07695457329!2d73.71808060781248!3d18.5844395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbe8d7c5549d%3A0x68be607fa40d2fb8!2sCognizant%20H2%20Building!5e0!3m2!1sen!2sin!4v1671012264511!5m2!1sen!2sin" width="460" height="355" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- Address section -->
+        <section class="location-address">
+          <h2>Reach us here</h2>
+          <address>
+            <h5>Cognizant Technology Solutions</h5>
+            Cognizant ISH office, <br>
+            Phase 1, Hinjewadi Rajiv Gandhi Infotech Park,<br>
+            , Pune, Maharashtra 411057 <br>
+            <p>Phone: 23745824014</p>
+            <P>E-mail: <a href='mailto:contact@cognizant.com'>contact@cognizant.com</a> </P>
+          </address>
+        </section>
+      </div>
+
+      <!-- Contact form section -->
+      <section>
+        <h2 style="text-align: center ;">Contact us by filling form</h2>
+        <form class="contact-form">
+          <div class="field-group">
+            <label for="nameInput">Enter Name: </label>
+            <input id="nameInput" type="text" name="firstName" placeholder="Enter your Name" required>
+          </div>
+          <div class="field-group">
+            <label for="emailInput">Enter E-mail: </label>
+            <input id="emailInput" type="email" name="email" placeholder="Enter your Email" required>
+          </div>
+          <div class="field-group">
+            <label for="phoneInput">Enter Phone: </label>
+            <input id="phoneInput" type="number" name="phone" placeholder="Enter phone" required>
+          </div>
+          <div id="queryBox" class="field-group">
+            <label for="queryInput">Enter Query: </label>
+            <textarea id="queryInput" name="query" cols="40" rows="3" 
+              placeholder="Write your query here"></textarea>
+          </div>
+          <div class="field-group">
+            <div class="btn-container">
+              <button class="button01">
+                <span class="text">Submit</span>
+                <div class="icon-container">
+                  <div class="icon icon--left">
+                    <svg>
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </div>
+                  <div class="icon icon--right">
+                    <svg>
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+            
+            <!-- button hover effect -->
+            <div class="btn-container">
+              <button class="button01">
+                <span class="text">Reset</span>
+                <div class="icon-container">
+                  <div class="icon icon--left">
+                    <svg>
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </div>
+                  <div class="icon icon--right">
+                    <svg>
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Button hover effect -->
+    <svg style="display: none;">
+      <symbol id="arrow-right" viewBox="0 0 20 10">
+        <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+      </symbol>
+    </svg>
+
+  </main>
+<!-- Main section ends -->
+
+<!-- Footer section -->
+  <footer>
+    <div class="footer-details">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-para">Copyright &copy; 2022 | Sagar</p>
+    </div>
+  </footer>
+  
+</body>
+
+</html>

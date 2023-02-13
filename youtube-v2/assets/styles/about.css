@@ -1,0 +1,119 @@
+/* Styles for about page */
+
+/* Style for header */
+header {
+  z-index: 1;
+}
+
+/* Style for main section */
+main {
+  padding-top: 40px;
+}
+
+.main-page {
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.about-info {
+  width: 70%;
+}
+
+/* sidebar styles */
+h1 {
+  background-color: #45a6b5;
+  border-radius: 0px 162px 1px 162px;
+  margin-right: 39px;
+  text-align: center;
+  padding: 7px;
+  margin-left: 17px;
+}
+
+.sidebar-nav {
+  width: 30%;
+  background-color: aqua;
+  margin: 30px 28px 120px 13px;
+  border-radius: 8px 124px 8px 124px;
+}
+
+.sidebar-nav ul  {
+  /* text-decoration: none; */
+  list-style-type: none;
+}
+
+.sidebar-nav ul li {
+  margin: 13px 27px 17px 10px;
+  text-align: center;
+  background-color: #26c6dac9;
+  padding: 10px;
+  border-radius: 1px 36px 1px 34px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  /* padding: 5px; */
+  /* background-color: aqua; */ 
+}
+
+/* Styles for about section */
+.about-info {
+  margin-top: 30px;
+}
+
+.about-info h2 {
+  color: #2a6666;
+} 
+
+.about-info h3 {
+  color: #080c0c;   /* #0aa4b4 */
+}
+
+#aboutYoutube {
+  border-bottom: 2px solid rgb(143, 142, 142);
+  padding-bottom: 10px;
+}
+
+#aboutYoutube a {
+  text-decoration: none;
+  color: blue;
+}
+
+#aboutYoutube h2 {
+  background-color: #cdd3d1;
+  width: 24%;
+  padding: 11px;
+  border-radius: 3px 57px 3px 43px;
+  margin: 0;
+}
+
+/* Introduction vid styles */
+#youtubeIntroVideo {
+  border-bottom: 2px solid rgb(143, 142, 142);
+  padding-bottom: 15px;
+}
+
+#youtubeIntroVideo h2, #youtubeIntroAudio h2 {
+  background-color: #cdd3d1;
+  width: 33%;
+  padding: 11px;
+  border-radius: 3px 55px 3px 46px;
+  margin: 20px 0;
+}
+
+/* Introduction Audio styles */
+#youtubeIntroAudio {
+  border-bottom: 2px solid rgb(143, 142, 142);
+  padding-bottom: 20px;
+}
+
+#youtubeServices h2 {
+  background-color: #cdd3d1;
+  width: 29%;
+  padding: 11px;
+  border-radius: 3px 55px 3px 46px;
+  margin: 20px 0;
+}

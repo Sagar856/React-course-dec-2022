@@ -1,0 +1,116 @@
+/* Styles for Watch page */
+
+.main-video-player {
+  /* margin-left: 130px; */
+}
+
+.watch-grid-container {
+  display: flex;
+  /* grid-template-columns: auto auto; */
+  width: 1024px;
+  margin: 0 auto; 
+}
+
+.main-video-player {
+  width: 63%;
+}
+
+.related-videos {
+  width: 45%;
+}
+
+.related-vid-match-brasil {
+  display: flex;
+  /* grid-template-columns: auto auto; */
+  padding: 6px;
+}
+
+.video-box {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.brasil-vid-info {
+  width: 59%;
+  text-align: left;
+  padding: 15px;
+}
+
+.brasil-vid-info div {
+  padding: 3px;
+}
+
+.brasil-vid-info div a {
+  text-decoration: none;
+  color: rgb(83, 72, 72);
+}
+
+.video-name {
+  font-weight: bold;
+}
+
+.main-vid-content {
+  display: flex;
+}
+
+.channel-name a {
+  font-size: 12px;
+  color: black;
+}
+
+.watch-channel-profile {
+  width: 6%;
+}
+
+.watch-channel-name {
+  width: 35%;
+}
+
+.watch-channel-name a {
+  text-decoration: none;
+}
+
+.subscribe-button {
+width: 48%;
+}
+
+.subscribe-button button{
+  border: 2px solid black;
+  border-radius: 18px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.watch-actions {
+  width: 80%;
+}
+
+.main-vid-content h4 {
+  margin: 0 auto;
+  color: black;
+}
+
+.watch-actions button {
+  /* border: 1px solid black; */
+  padding: 7px;
+  text-align: right;
+  border-radius: 18px;
+  background-color:#e0e0e0b8;
+}
+
+.description-box {
+  background-color: #e0e0e0b8;
+  border-radius: 10px;
+  padding: 9px;
+  margin-top: 31px;
+  margin-right: 32px;
+}
+
+.description-box h5,h6 {
+  margin: 0 auto;
+}
+
+.description-box p {
+  font-size: 14px;
+}

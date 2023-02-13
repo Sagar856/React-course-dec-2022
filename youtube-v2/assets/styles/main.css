@@ -1,0 +1,927 @@
+/* External stylesheet */
+  
+/* Font Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+header {
+  z-index: 1;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+button {
+  background-color: white;
+  border: none;  /* border-width border-style border-color */
+}
+
+span {
+  font-size: 12px;
+}
+
+/* On link hover effect styles */
+a:hover {
+  background-color: rgb(210, 206, 206);
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 0;
+}
+
+/* =========================== Styles for header ====================== */
+main{
+  padding-top: 61px;
+}
+
+.collapsible-menu, .main-header {
+  display: inline-block;
+}
+
+.collapsible-menu {
+  width: 27px;
+}
+
+.main-header {
+  /* width: calc(100% - 32px); */
+}
+
+.search-bar {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  font-size: 15px;
+}
+/* ==========================Styles for header ended=================== */
+
+/* ========================== Styles for main ========================= */
+/* Id selector */
+.suggested-topics ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 6px;
+}
+
+.suggested-topics ul li a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  vertical-align: middle;
+  background-color: #ebebeb;
+  padding: 4px 7px; /* top right bottom left */
+  border-radius: 5px;
+}
+/* ======================Styles for main ended ======================== */
+
+/* ========================= Styles for Footer========================= */
+.footer-nav {
+  /* width: 1216px; */
+  text-align: center;
+  border-top: 5px solid #ccc;
+}
+
+.footer-nav ul {
+  margin: 10px;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-nav ul li a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  padding: 7px 12px;
+  font-weight: bold;
+}
+
+.footer-para {
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+/* ====================== Styles for footer ended ============================== */
+
+/* ================== Style for button hover effect ============================ */
+.btn-container {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  margin-left: 82px;
+}
+
+.btn-container button {
+  --width: 122px;
+  --height: 47px;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: gold;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  border: 2px solid goldenrod;
+}
+
+button .icon-container {
+  --icon-size: 25px;
+  position: relative;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 15px;
+  transition: transform 500ms ease;
+}
+
+button .icon-container .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform 500ms ease, opacity 250ms ease;
+}
+
+button .icon-container .icon svg { /* Home button hover effect */ 
+  width: 100%;
+  height: 100%;
+  fill: rgb(248, 172, 7);
+}
+
+.btn-container button:hover .icon-container {
+  transform: translateX(125%);
+}
+
+.btn-container button:hover .icon-container .icon--left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.btn-container button:hover .icon-container .icon--right {
+  transform: translateX(200%);
+  opacity: 0;
+}
+/* ============= Style for button hover effect ended============= */
+
+/* ========================= Responsive CSS ================================= */
+/* =========== Extra small devices (phones, 600px and down) ================= */
+@media only screen and (max-width: 600px) {
+
+  body {
+    /* background-color: rgb(247, 188, 247); */
+  }
+  
+  /* ============= Styles for header ========== */ 
+  header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 62px;
+  }
+
+  .header-wrapper {
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 93%; 
+    border-bottom: 2px solid rgb(240, 237, 237);
+  }
+
+  .logo-link {
+    display: inline-block;
+    /* height: 34px; */
+    width: 38px;
+    vertical-align: middle;
+  }
+
+  .logo-link img {
+    height: 31px;
+    width: 66px;
+  }
+
+  .controls-bar {
+    display: inline-block;
+    width: 270px;
+    text-align: right;
+  }
+
+  .search-btn {
+    border: 1px solid #bbb;
+    padding: 7.5px;
+    border-radius: 19px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -5px;
+    font-size: 11px;
+    height: 28px;
+    /* width: 10px; */
+    border-left: 0;
+  }
+
+  .search-input {
+    width: 70px;
+    padding: 8px 12px;
+    font-size: 11px;
+    outline: none;
+    border: solid 1px #bbb;
+    border-radius: 19px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 27px;
+    border-right: 0;
+  } 
+
+  .signin-btn {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 10px;
+  }
+  /* =========== Styles for header ended ============ */
+
+  /* =========== Styles for main ============= */
+  #suggested-topics {
+    border-bottom: 2px solid #ccc;
+    height: 38px;
+  }
+
+  .suggested-topics ul {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 35px;
+    width: 82%; 
+    margin-bottom: 3px;
+  }
+
+  /* Styles for hero container */
+  .hero-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 83%;
+    margin: 0 auto;
+    /* background-color: #4a8ba8; */
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background-image: linear-gradient( 180.4deg,  rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+  }
+
+  .hero-image {
+    width: 36%;
+  }
+
+  .hero-image img {
+    height: 222px;
+    width: 324px;
+  }
+  
+  .hero-content {
+    width: 93%;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .hero-listen-now-button {
+    width: 99%;
+    margin-left: 70px;
+  }
+  
+  .listen-now-button {
+    padding: 8px;
+    border: 2px solid rgb(163, 140, 12);
+    border-radius: 21px;
+    margin: 71px auto;
+    /* margin-left: 9px; */
+    background-color: black;
+  }
+
+  /* Styles for recommended video */
+  .recommended-videos {
+    margin: 0 auto;
+    text-align: center;
+    width: 84%;
+  }
+  
+  .recommended-videos h2 {
+    background: rgb(214, 218, 222);
+    border-radius: 10px;
+    /* margin: 0 0 9px 0; */
+    padding: 5px;
+  }
+
+  .recommended-video-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+  }
+
+  .video-box-img {
+    width: 320px;
+    height: 200px;
+  }
+  
+  .video-details {
+    display: flex;
+  }
+  
+  .channel-thumbnel {
+    width: 21%;
+  }
+  
+  .video-info {
+    width: 77%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .video-info a {
+    text-decoration: none;
+    color: black;
+  }
+  /* =========Styles for main ended ============ */
+
+  /* ============= Styles for Footer=========== */
+  .footer-details {
+    margin: 0 auto;
+    width: 84%;
+    margin-top: 10px;
+  }
+  /* ========= Styles for footer ended ========== */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  body {
+    /* background-color: yellow; */
+  }
+}
+
+/* ============= Medium devices (landscape tablets, 768px and up) ============= */
+@media only screen and (min-width: 768px) {
+
+  body {
+    /* background-color: lightpink; */
+  }
+
+  /* ============= Styles for header ========== */ 
+  header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 62px;
+  }
+
+  .header-wrapper {
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 87%; 
+    border-bottom: 2px solid rgb(240, 237, 237);
+  }
+
+  .logo-link {
+    display: inline-block;
+    /* height: 34px; */
+    width: 38px;
+    vertical-align: middle;
+  }
+
+  .controls-bar {
+    display: inline-block;
+    width: 630px;
+    text-align: right;
+  }
+
+  .search-btn {
+    border: 1px solid #bbb;
+    padding: 7.5px;
+    border-radius: 19px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -5px;
+    font-size: 15px;
+    height: 37px;
+    /* width: 10px; */
+    border-left: 0;
+  }
+
+  .search-input {
+    width: 220px;
+    padding: 8px 12px;
+    font-size: 15px;
+    outline: none;
+    border: solid 1px #bbb;
+    border-radius: 19px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 37px;
+    border-right: 0;
+  } 
+
+  .signin-btn {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 1px;
+  }
+  /* ========= Styles for header ended ========== */
+
+  /* =========== Styles for main ============= */
+  #suggested-topics {
+    border-bottom: 2px solid #ccc;
+    height: 38px;
+  }
+
+  .suggested-topics ul {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 35px;
+    width: 82%; 
+    margin-bottom: 3px;
+  }
+
+  /* Styles for hero container */
+  .hero-container {
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+    /* background-color: #4a8ba8; */
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background-image: linear-gradient( 180.4deg,  rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+  }
+
+  .hero-image {
+    width: 36%;
+  }
+
+  .hero-image img {
+    height: 222px;
+    width: 225px;
+  }
+  
+  .hero-content {
+    width: 70%;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .hero-listen-now-button {
+    width:23% ;
+  }
+  
+  .listen-now-button {
+    padding: 8px;
+    border: 2px solid rgb(163, 140, 12);
+    border-radius: 21px;
+    margin: 71px auto;
+    /* margin-left: 9px; */
+    background-color: black;
+  }
+
+  /* Styles for recommended video */
+  .recommended-videos {
+    margin: 0 auto;
+    text-align: center;
+    width: 84%;
+  }
+  
+  .recommended-videos h2 {
+    background: rgb(214, 218, 222);
+    border-radius: 10px;
+    /* margin: 0 0 9px 0; */
+    padding: 5px;
+  }
+
+  .recommended-video-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+  }
+
+  .video-box-img {
+    width: 300px;
+    height: 190px;
+  }
+  
+  .video-details {
+    display: flex;
+  }
+  
+  .channel-thumbnel {
+    width: 21%;
+  }
+  
+  .video-info {
+    width: 77%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .video-info a {
+    text-decoration: none;
+    color: black;
+  }
+  /* =========Styles for main ended ============ */
+
+  /* ============= Styles for Footer=========== */
+  .footer-details {
+    margin: 0 auto;
+    width: 84%;
+    margin-top: 10px;
+  }
+  /* ========= Styles for footer ended ========== */
+}
+
+/* ========== Large devices (laptops/desktops, 992px and up) =========== */
+@media only screen and (min-width: 992px) {
+
+  body {
+    /* background-color: lightgreen; */
+  }
+
+  /* ============= Styles for header ========== */ 
+  header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 62px;
+  }
+
+  .header-wrapper {
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 85%; 
+    border-bottom: 2px solid rgb(240, 237, 237);
+  }
+
+  .logo-link {
+    display: inline-block;
+    /* height: 34px; */
+    width: 38px;
+    vertical-align: middle;
+  }
+
+  .controls-bar {
+    display: inline-block;
+    width: 920px;
+    text-align: right;
+  }
+
+  .search-btn {
+    border: 1px solid #bbb;
+    padding: 7.5px;
+    border-radius: 19px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -5px;
+    font-size: 15px;
+    height: 37px;
+    /* width: 10px; */
+    border-left: 0;
+  }
+
+  .search-input {
+    width: 400px;
+    padding: 8px 12px;
+    font-size: 15px;
+    outline: none;
+    border: solid 1px #bbb;
+    border-radius: 19px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 37px;
+    border-right: 0;
+  } 
+
+  .signin-btn {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 1px;
+  }
+  /* ========= Styles for header ended ========== */
+
+  /* =========== Styles for main ============= */
+  #suggested-topics {
+    border-bottom: 2px solid #ccc;
+    height: 38px;
+  }
+
+  .suggested-topics ul {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 35px;
+    width: 82%; 
+    margin-bottom: 3px;
+  }
+
+  /* Styles for hero container */
+  .hero-container {
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+    /* background-color: #4a8ba8; */
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background-image: linear-gradient( 180.4deg,  rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+  }
+
+  .hero-image {
+    width: 36%;
+  }
+
+  .hero-image img {
+    height: 222px;
+    width: 335px;
+  }
+  
+  .hero-content {
+    width: 70%;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .hero-listen-now-button {
+    width:23% ;
+  }
+  
+  .listen-now-button {
+    padding: 8px;
+    border: 2px solid rgb(163, 140, 12);
+    border-radius: 21px;
+    margin: 71px auto;
+    /* margin-left: 9px; */
+    background-color: black;
+  }
+
+  /* Styles for recommended video */
+  .recommended-videos {
+    margin: 0 auto;
+    text-align: center;
+    width: 84%;
+  }
+  
+  .recommended-videos h2 {
+    background: rgb(214, 218, 222);
+    border-radius: 10px;
+    /* margin: 0 0 9px 0; */
+    padding: 5px;
+  }
+
+  .recommended-video-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+  }
+
+  .video-box-img {
+    width: 300px;
+    height: 190px;
+  }
+  
+  .video-details {
+    display: flex;
+  }
+  
+  .channel-thumbnel {
+    width: 21%;
+  }
+  
+  .video-info {
+    width: 77%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .video-info a {
+    text-decoration: none;
+    color: black;
+  }
+  /* =========Styles for main ended ============ */
+
+  /* ============= Styles for Footer=========== */
+  .footer-details {
+    margin: 0 auto;
+    width: 84%;
+    margin-top: 10px;
+  }
+  /* ========= Styles for footer ended ========== */
+}
+
+/* ========== Extra large devices (large laptops and desktops, 1200px and up) ============= */
+@media only screen and (min-width: 1200px) {
+
+  body {
+    /* background-color: rgb(178, 180, 243); */
+  }
+
+  /* ============= Styles for header ========== */ 
+  header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 62px;
+  }
+
+  .header-wrapper {
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 85%;
+    border-bottom: 2px solid rgb(240, 237, 237);
+  }
+
+  .logo-link {
+    display: inline-block;
+    /* height: 34px; */
+    width: 38px;
+    vertical-align: middle;
+  }
+
+  .controls-bar {
+    display: inline-block;
+    width: 953px;
+    text-align: right;
+  }
+
+  .search-btn {
+    border: 1px solid #bbb;
+    padding: 7.5px;
+    border-radius: 19px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -5px;
+    font-size: 15px;
+    height: 37px;
+    /* width: 10px; */
+    border-left: 0;
+  }
+
+  .search-input {
+    width: 500px;
+    padding: 8px 12px;
+    font-size: 15px;
+    outline: none;
+    border: solid 1px #bbb;
+    border-radius: 19px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 37px;
+    border-right: 0;
+  }
+
+  .signin-btn {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 1px;
+  }
+  /* ========= Styles for header ended ========== */
+
+  /* =========== Styles for main ============= */
+  #suggested-topics {
+    border-bottom: 2px solid #ccc;
+    height: 38px;
+  }
+
+  .suggested-topics ul {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 35px;
+    width: 82%; 
+    margin-bottom: 3px;
+  }
+
+  /* Styles for hero container */
+  .hero-container {
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+    /* background-color: #4a8ba8; */
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background-image: linear-gradient( 180.4deg,  rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+  }
+
+  .hero-image {
+    width: 32%;
+  }
+  .hero-image img {
+    height: 200px;
+    width: 310px;
+  }
+  
+  .hero-content {
+    width: 70%;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .hero-listen-now-button {
+    width:23% ;
+  }
+  
+  .listen-now-button {
+    padding: 8px;
+    border: 2px solid rgb(163, 140, 12);
+    border-radius: 21px;
+    margin: 71px auto;
+    /* margin-left: 9px; */
+    background-color: black;
+  }
+
+  /* Styles for recommended video */
+  .recommended-videos {
+    margin: 0 auto;
+    text-align: center;
+    width: 84%;
+  }
+  
+  .recommended-videos h2 {
+    background: rgb(214, 218, 222);
+    border-radius: 10px;
+    /* margin: 0 0 9px 0; */
+    padding: 5px;
+  }
+
+  .recommended-video-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+  }
+
+  .video-box-img {
+    width: 240px;
+    height: 160px;
+  }
+  
+  .video-details {
+    display: flex;
+  }
+  
+  .channel-thumbnel {
+    width: 21%;
+  }
+  
+  .video-info {
+    width: 77%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .video-info a {
+    text-decoration: none;
+    color: black;
+  }
+  /* =========Styles for main ended ============ */
+
+  /* ============= Styles for Footer=========== */
+  .footer-details {
+    margin: 0 auto;
+    width: 84%;
+    margin-top: 10px;
+  }
+  /* ========= Styles for footer ended ========== */
+}

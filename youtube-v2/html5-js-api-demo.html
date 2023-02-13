@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./assets/scripts/html5-1js-api-demo.js"></script>
+
+  <title>HTML5 JS API</title>
+  <style>
+    .draggable-box{
+      border: solid 1px #ccc;
+      width: 200px;
+      height: 40px;
+      background-color: aquamarine;
+      text-align: center;
+      padding: 50px 0;
+    }
+    .droppable-box{
+      border: solid 1px #ccc;
+      width: 400px;
+      height: 120px;
+      background-color: lightgoldenrodyellow;
+      text-align: center;
+      padding: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML5 JS API - Demo</h1>
+  <h2>Web Storage | Demo</h2>
+  <input type="text" placeholder="Enter Pincode" id="textField">
+  <button onclick="handleSavePincode()">Save Pincode</button>
+  <p>Entered Pincode:
+  <span id="pincode"></span>
+    <button onclick="handleDeletePincode()">Delete Pincode</button>
+  </p>
+  
+  <hr>
+  <h2>Geolocaton</h2>
+  <button onclick="handleLocateMe()">Locate Me</button>
+  <div id="userLocaton">
+    latitude : <p id="latitude"></p>
+    longitud : <p id="longitude"></p>
+  </div>
+
+  <hr>
+  <h2>Drag Drop</h2>
+  <div id="draggableBox" draggable="true" class="draggable-box" ondragstart="handleDragStart(event)">
+    draggable Box</div>
+
+  <div id="dropableBox" class="droppable-box" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+     dropable-box</div>
+  
+</body>
+</html>
